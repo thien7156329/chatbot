@@ -24,7 +24,7 @@ const { FACEBOOK_ACCESS_TOKEN } = process.env;
 
 const sendTextMessage = (userId, text) => {
   return fetch(
-    `https://graph.facebook.com/v2.6/me/messages?access_token=${FACEBOOK_ACCESS_TOKEN}`,
+    `https://graph.facebook.com/v2.6/me/messages?access_token=EAAMuY6ST8DABAGDimrST8cAQjT85KYIU4jRJR3ZBd5Bae1s12kpHX7kBZCLWnrTu1mTow46cwSdTWvEhkZBUXu3mr9QxhbRMZBrxZAlrsnyNbYWexGNEELlmcgqx6iM2Bc6KP1zHdqZBQwRygHVmdSa0ZAZBTTW4BTFMPasQQ6fqDQZDZD`,
     {
       headers: {
         'Content-Type': 'application/json',
